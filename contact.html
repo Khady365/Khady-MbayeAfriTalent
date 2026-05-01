@@ -3,16 +3,68 @@
 <head> 
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>AfriTalent — Accueil</title> 
+<title>Contact</title> 
 <!-- Bootstrap 5 via CDN : feuille de style --> 
 <link 
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
 rel="stylesheet"> 
 <!-- Votre feuille de style personnelle --> 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body> 
 <!-- Le contenu de la page sera ajoute ici --> 
+    <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0 my-5 ">
+    <div class="card ">
+      <div class="card-body">
+                    <h2 class="text-center mb-4">Formulaire</h2>
+                    <!-- nom prenom -->
+                    <div class="row mb-5">
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Prénom" aria-label="First name">
+                    </div>
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Nom" aria-label="Last name">
+                     </div>
+                    </div>
+                    <!-- email -->
+                     <div class="mb-5">
+                    <label for="exampleFormControlInput1" class="form-label ">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <!-- sujet -->
+                     <select class="form-select mb-5" aria-label="Default select example">
+                    <option value="1">Support</option>
+                    <option value="2">Partenariat</option>
+                    <option value="3">Recrutement</option>
+                    </select>
+                    <!-- message -->
+                     <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">Soumettre</button>
+                    </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 my-5  ">
+    <div class="card ">
+      <div class="card-body  ">
+        <h2 class="text-center mb-4">Informations</h2>
+        <p> <i class="fa-solid fa-envelope"></i> contact@afritalent.com</p>
+        <p><i class="fa-solid fa-phone-flip"></i>+221 33 897 56 00</p>
+        <p><i class="fa-solid fa-location-dot"></i>Dakar, Sénégal</p>
+        <iframe src="https://maps.google.com/maps?q=dakar&t=&z=13&ie=UTF8&iwloc=&output=embed"  frameborder="10" width="100%" height="250">
+            
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Bootstrap 5 via CDN : script JavaScript --> 
 <script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
