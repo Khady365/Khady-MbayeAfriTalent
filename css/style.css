@@ -2,16 +2,28 @@
 * {
     margin: 0;
     padding: 0;}
-
 .nav{
    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
+.nav.scrolled {
+  padding: 15px 50px; /* Réduis ces valeurs selon tes goûts pour l'effet "shrink" */
+  background-color: #1E293B !important; /* Force le nouveau fond opaque (Bleu Confiance) */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* L'ombre portée */
+}
+.nav.scrolled a {
+  color: #FFFFFF !important; /* Force les liens en blanc si ton fond devient sombre */
+}
+
 body {
-  background-color: #f8fafc;
+  /* background-color: rgb(238, 238, 238); */
   padding-top: 70px;
   /* font-family: var(--font-inter); */
  font-family: 'Times New Roman', Times, serif;
  font-size: large;
+ /* background: #EEEDFF; */
+ 
 }
 .ins{
   padding: 10px 40px;
@@ -33,21 +45,32 @@ body {
 .carte{
   border-radius: 20px;
   transition: 0.3s;
+   background: #4572cd19;
+  color: #64748b;
+ border: 1px solid #e5e7eb;
 }
 .carte:hover{
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(59,130,246,0.25);
 }
 .carte0{
   border-radius: 20px;
   transition: 0.3s;
+  justify-content: center;
+  
 }
-.carte0:hover{
+.carte0:hover{  
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(46, 68, 177, 0.874);}
+  box-shadow: 0 8px 20px rgba(218, 226, 197, 0.874);
+  
+}
+  
 .carte1{
   border-radius: 20px;
   transition: 0.3s;
+  background: #4572cd19;
+  color: #64748b;
+  border: 1px solid #e5e7eb;
 }
 .carte1:hover{
   transform: translateY(-5px);
@@ -57,6 +80,9 @@ body {
 .carte2{
   border-radius: 20px;
   transition: 0.3s;
+  background: #4572cd19;
+  color: #64748b;
+  border: 1px solid #e5e7eb;
 }
 .carte2:hover{
   transform: translateY(-5px);
@@ -65,6 +91,9 @@ body {
 .carte3{
   border-radius: 20px;
   transition: 0.3s;
+  background: #4572cd19;
+  color: #64748b;
+  border: 1px solid #e5e7eb;
 }
 .carte3:hover{
   transform: translateY(-5px);
@@ -73,6 +102,9 @@ body {
 .carte4{
   border-radius: 20px;
   transition: 0.3s;
+  background: #4572cd19;
+  color: #64748b;
+  border: 1px solid #e5e7eb;
 }
 .carte4:hover{
   transform: translateY(-5px);
@@ -81,6 +113,9 @@ body {
 .carte5{
   border-radius: 20px;
   transition: 0.3s;
+  background: #4572cd19;
+  color: #64748b;
+  border: 1px solid #e5e7eb;
 }
 .carte5:hover{
   transform: translateY(-5px);
@@ -89,6 +124,9 @@ body {
 .carte6{
   border-radius: 20px;
   transition: 0.3s;
+  background: #4572cd19;
+  color: #64748b;
+  border: 1px solid #e5e7eb;
 }
 .carte6:hover{
   transform: translateY(-5px);
@@ -120,23 +158,57 @@ body {
    padding: 20px 40px;
    border-radius: 20px;
 }
+.bts{
+  padding: 20px 40px;
+   border-radius: 20px;
+   
+  
+  
+}
+.bts:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(218, 226, 197, 0.874);
+  transform: translateY(-5px);
+}
+
 .action{
- background-color: #1241af;
+ background-color: #7db4ff;
  padding: 10px 40px;
  color: white;
 }
-h1, h2 {
+h1{
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-weight: 100;
+ color: white;
+}
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  font-weight: 100;
 }
 .hero{
-    /* background-image:url(../images/Hero.png);
-    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white; */
+    
+  /* color: white; 
   text-align: center;
   padding: 80px 1.5rem 48px;
+ background-image: url("../images/imghero.png");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat; */
+ color: white;
+  text-align: center;
+  padding: 80px 1.5rem 48px;
+ background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("../images/imghero.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+ 
   /* background: linear-gradient(to right, #0f172a, #1e293b); couleur que je peux utiliser au mode sombre */
 }
 .hero h1 ,h2  {
@@ -158,6 +230,7 @@ h1, h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #64748b;
 
 }
 
@@ -165,8 +238,50 @@ h1, h2 {
 .come{
   height: 10px;
 }
+/* .bt1{
+  background-color: white;
+} */
+/* .CATÉGORIES{
+  background: #E8D5CC;
+} */
 
-
+ footer{
+  background: #001C2F;
+  color: white;
+ }
+ .bg{
+  background-color: #0d1117;
+ }
+ .h1{
+  color:black;
+ }
+ .hist{
+  color:#64748b ;
+ }
+ .inov{
+  color:#64748b ;
+ }
+ .retour{
+  position: fixed;
+  bottom: 30px; /* Distance par rapport au bas de l'écran */
+  right: 30px;  /* Distance par rapport à la droite */
+  z-index: 99;  /* Pour passer au-dessus du contenu */
+  background:linear-gradient(45deg, rgb(50, 91, 224), rgb(189, 196, 206));
+  /* ÉTAT INITIAL,Caché et transparent */
+  opacity: 0;
+  visibility: hidden;
+  /* Transition pour l'effet de fondu et de survol */
+  transition: all 0.3s ease;
+ }
+ .retour:hover {
+  background:linear-gradient(45deg, rgb(50, 91, 224), rgb(189, 196, 206)); 
+  transform: translateY(-5px); /* Légère animation de montée */
+}
+/* L'ÉTAT ACTIVER (géré par le JavaScript au scroll) */
+.retour.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 
 
