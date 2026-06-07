@@ -172,3 +172,58 @@ haut.addEventListener('click', function() {
     behavior: 'smooth' /* Pour un défilement fluide vers le haut */
   });
 });
+
+// 1. CONFIGURATION DE L'ANIMATION DU COMPTEUR
+let anim   = (cpt) => {
+let target = +cpt.getAttribute('data-target'); // Récupère le nombre cible 
+let Vitesse = 80; // Vitesse de l'animation 
+  
+let miseajour = () => {
+let act = +cpt.innerText;
+let incrementation = Math.ceil(target / Vitesse); // Calcule le pas d'incrémentation
+
+    if ( act < target) {
+      cpt.innerText =  act + incrementation;
+      setTimeout(miseajour, 25); // Fréquence de mise à jour 25ms
+    } else {
+      cpt.innerText = target; // Assure que le chiffre final est exact
+    }
+  };
+
+  miseajour();
+};
+
+// 2. CONFIGURATION DE L'INTERSECTION OBSERVER (Détection au scroll)
+let sta = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    // Si la carte de statistique apparaît à l'écran
+    if (entry.isIntersecting) {
+      let cpt = entry.target;
+      anim (cpt); // Lance l'animation de chiffres
+      observer.unobserve(cpt); // Arrête d'observer pour ne le faire qu'une seule fois
+    }
+  });
+}, { threshold: 0.2 }); // Se déclenche quand 20% de la carte est visible
+
+// 3. SELECTION ET RECHERCHE DES COMPTEURS DANS TON CODE
+document.querySelectorAll('.cpt').forEach(cpt => {
+  sta.observe(cpt);
+});
+
+// 1. On crée le vigile l'observateur
+let  fond = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    // Si la section entre dans le viewport visible à au moins 10%
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible'); // On applique l'effet CSS
+      observer.unobserve(entry.target); // On arrête d'observer pour garder la section visible
+    }
+  });
+}, {
+  threshold: 0.1 // Déclenche l'effet dès que 10% de la section est visible
+});
+
+// 2. On cible toutes nos sections et on les donne à surveiller au vigile
+document.querySelectorAll('.fondu').forEach(section => {
+  fond.observe(section);
+});
