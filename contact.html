@@ -14,11 +14,6 @@ rel="stylesheet">
 </head>
 <body class="bg"> 
 <!-- Le contenu de la page sera ajoute ici --> 
-
-
-
-
-
 <nav class=" nav navbar fixed-top navbar-expand-lg navbar-light   ">
     <div class="container-fluid">
       <img src="images/logo afritalent (2).png" width="50px" height="50px">
@@ -49,65 +44,84 @@ rel="stylesheet">
     <button type="button" id="sombre" class=" bt1 btn btn-secondary"><i class="fa-solid fa-sun"></i>
     </button>
   </nav>
-
-
-
-
-
-
-    <div class="row">
-  <div class=" contact col-sm-6 mb-3 mb-sm-0 my-5 ">
-    <div class= "  fondu carte card ">
+    <div class="row mb-5 mt-5">
+  <div class="contact col-sm-6 mb-4 mb-sm-0">
+    <div class="fondu carte card h-100">
       <div class="card-body">
-                    <h2 class=" text-center mb-4">Formulaire</h2>
-                    <!-- nom prenom -->
-                    <div class="row mb-5">
-                    <div class="col">
-                    <input type="text" class="form-control" placeholder="Prénom" aria-label="First name">
-                    </div>
-                    <div class="col">
-                    <input type="text" class="form-control" placeholder="Nom" aria-label="Last name">
-                     </div>
-                    </div>
-                    <!-- email -->
-                     <div class="mb-5">
-                    <label for="exampleFormControlInput1" class="form-label ">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <!-- sujet -->
-                     <select class="form-select mb-5" aria-label="Default select example">
-                    <option value="1">Support</option>
-                    <option value="2">Partenariat</option>
-                    <option value="3">Recrutement</option>
-                    </select>
-                    <!-- message -->
-                     <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class=" ins btn-primary" type="button">Soumettre</button>
-                    </div>
+        
+        <h2 class="text-center mb-4">Formulaire</h2>
+        
+        <div id="succes" class="alert alert-success d-none mb-4" role="alert">
+          Votre message a été envoyé avec succès !
+        </div>
+        
+        <form id="contactForm" novalidate>
+          
+          <div class="row mb-5">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Prénom" aria-label="First name" id="prenom">
+              <div class="invalid-feedback">Le prénom est requis.</div>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nom" aria-label="Last name" id="nom">
+              <div class="invalid-feedback">Le nom est requis.</div>
+            </div>
+          </div>
+          
+          <div class="mb-5">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div class="invalid-feedback" id="emailerreur">L'adresse email est requise.</div>
+          </div>
+          
+          <div class="mb-5">
+            <select class="form-select" aria-label="Default select example" id="sujet">
+              <option value="" selected disabled>Choisir un sujet...</option>
+              <option value="1">Support</option>
+              <option value="2">Partenariat</option>
+              <option value="3">Recrutement</option>
+            </select>
+            <div class="invalid-feedback">Veuillez sélectionner un sujet.</div>
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="invalid-feedback" id="messageErreur">Le message est requis.</div>
+          </div>
+          
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="ins btn btn-primary" type="submit">Soumettre</button>
+          </div>
+          
+        </form>
 
       </div>
     </div>
   </div>
-  <div class=" contact col-sm-6 mb-3 mb-sm-0 my-5 mb-5 ">
-    <div class=" fondu carte card ">
-      <div class="card-body  ">
+  
+  <div class="contact col-sm-6 mb-4 mb-sm-0">
+    <div class="fondu carte card h-100">
+      <div class="card-body">
+        
         <h2 class="text-center mb-4">Informations</h2>
-        <p> <i class="fa-solid fa-envelope"></i> contact@afritalent.com</p>
-        <p><i class="fa-solid fa-phone-flip"></i>+221 33 897 56 00</p>
-        <p><i class="fa-solid fa-location-dot"></i>Dakar, Sénégal</p>
-        <iframe src="https://maps.google.com/maps?q=dakar&t=&z=13&ie=UTF8&iwloc=&output=embed"  frameborder="10" width="100%" height="250">
-            
-        </iframe>
+        
+        <div class="mb-4">
+          <p><i class="fa-solid fa-envelope me-2 text-primary"></i> contact@afritalent.com</p>
+          <p><i class="fa-solid fa-phone-flip me-2 text-primary"></i> +221 33 897 56 00</p>
+          <p><i class="fa-solid fa-location-dot me-2 text-primary"></i> Dakar, Sénégal</p>
+        </div>
+        
+        <div>
+          <iframe src="https://maps.google.com/maps?q=dakar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" width="100%" height="250" style="border:0;">
+          </iframe>
+        </div>
+
       </div>
     </div>
   </div>
+
 </div>
-
-
 
 
 
@@ -150,6 +164,7 @@ rel="stylesheet">
     </div>
   </div>
 </div>
+<p class="text-center">&copy; <span id="annee"></span> Afritalent. Tous droits réservés.</p>
 </footer>
 
 <button type="button" id="retour" class=" retour btn btn-secondary"><i class="fa-solid fa-arrow-up"></i>

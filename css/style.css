@@ -300,6 +300,12 @@ h2{
   transform: translateY(0);
   visibility: visible;
 }
+/*  Pour ajouter une transition douce à la disparition/apparition */
+
+/* La classe cachée  */
+.is-hidden {
+  display: none !important;
+}
 
 
 

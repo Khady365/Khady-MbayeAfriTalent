@@ -51,140 +51,135 @@ rel="stylesheet">
 
 
  <h1 class=" h1 text-center mb-5 ">Catalogue de freelances</h1>
- <!-- premiers freelances -->
-<div class=" container text-center">
-    <div class="row">
-        <div class="col">
-            <div class=" fondu carte card" style="width: 18rem;">
-                <img src="images/free1 (2).jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Fatou Sow</h5>
-                <h6>Designer UI/UX</h6>
-                <p class="card-text">Création d’interfaces intuitives et élégantes pour améliorer l’expérience utilisateur.</p>
-                <p><img src="images/notefree1.jpg" width="100px"></p>
-                <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
-            </div>
+ <div class="text-center mb-4">
+    <button class="btn btn-primary  active filtre" data-filter="all">Tous</button>
+    <button class="btn btn-outline-primary filtre" data-filter="developpeur">Développeurs</button>
+    <button class="btn btn-outline-primary filtre" data-filter="designer">Designers</button>
+    <button class="btn btn-outline-primary filtre" data-filter="marketing">Marketing</button>
+  </div>
+ 
+<div class="container text-center my-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+    
+    <div class="col d-flex justify-content-center cartefiltre" data-category="developpeur">
+      <div class="fondu carte card" style="width: 18rem;">
+        <img src="images/free2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Marie-Liesse</h5>
+          <h6>Développeuse Backend</h6>
+          <p class="card-text">Spécialiste Node.js, elle conçoit des architectures serveurs robustes et sécurisées.</p>
+          <p><img src="images/notefree1.jpg" width="100px"></p>
+          <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
         </div>
+      </div>
     </div>
 
-    <div class="col">
-            <div class=" fondu carte card" style="width: 18rem;">
-                <img src="images/free2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Aminata Ndiaye</h5>
-                <h6>Développeuse Frontend</h6>
-                <p class="card-text">Spécialiste React, elle crée des interfaces dynamiques et performantes.</p>
-                <p><img src="images/notefree1.jpg" width="100px"></p>
-                <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
-            </div>
+    <div class="col d-flex justify-content-center cartefiltre" data-category="developpeur">
+      <div class="fondu carte card" style="width: 18rem;">
+        <img src="images/free5.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Alioune Diop</h5>
+          <h6>Développeur Web</h6>
+          <p class="card-text">Développeur spécialisé en création de sites rapides et modernes. Passionné par les technologies web récentes.</p>
+          <p><img src="images/notefree1.jpg" width="100px"></p>
+          <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
         </div>
+      </div>
     </div>
 
-    <div class="col">
-      <div class=" fondu carte card mb-5" style="width: 18rem;">
-                <img src="images/free5.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Alioune Diop</h5>
-                <h6>Développeur Web</h6>
-                <p class="card-text">Développeur spécialisé en création de sites rapides et modernes. Passionné par les technologies web récentes.</p>
-                <p><img src="images/notefree1.jpg" width="100px"></p>
-                <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
-            </div>
+    <div class="col d-flex justify-content-center cartefiltre" data-category="developpeur">
+      <div class="fondu carte card" style="width: 18rem;">
+        <img src="images/free3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aminata Ndiaye</h5>
+          <h6>Développeuse Frontend</h6>
+          <p class="card-text">Spécialiste React, elle crée des interfaces dynamiques et performantes.</p>
+          <p><img src="images/notefree1.jpg" width="100px"></p>
+          <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
         </div>
+      </div>
     </div>
+
+    <div class="col d-flex justify-content-center cartefiltre" data-category="developpeur">
+      <div class="fondu carte card" style="width: 18rem;">
+        <img src="images/free4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aissatou Doumbouya</h5>
+          <h6>Data & IA</h6>
+          <p class="card-text">Analyse de données et création de modèles intelligents pour entreprises.</p>
+          <p><img src="images/notefree2.jpg" width="100px"></p>
+          <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center cartefiltre" data-category="designer">
+      <div class="fondu carte card" style="width: 18rem;">
+        <img src="images/free1 (2).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Fatou Sow</h5>
+          <h6>Designer UI/UX</h6>
+          <p class="card-text">Création d’interfaces intuitives et élégantes pour améliorer l’expérience utilisateur.</p>
+          <p><img src="images/notefree1.jpg" width="100px"></p>
+          <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center cartefiltre" data-category="designer">
+      <div class="fondu carte card" style="width: 18rem;">
+        <img src="images/free6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ibrahima Mbaye</h5>
+          <h6>Designer Graphique</h6>
+          <p class="card-text">Création de logos, identités visuelles et supports de communication modernes.</p>
+          <p><img src="images/notefree1.jpg" width="100px"></p>
+          <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center cartefiltre" data-category="marketing">
+      <div class="fondu carte card" style="width: 18rem;">
+        <img src="images/free8.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mamadou Ba</h5>
+          <h6>Marketing Digital</h6>
+          <p class="card-text">Expert en stratégie digitale et gestion des réseaux sociaux pour booster la visibilité.</p>
+          <p><img src="images/notefree1.jpg" width="100px"></p>
+          <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center cartefiltre" data-category="marketing">
+      <div class="fondu carte card" style="width: 18rem;">
+        <img src="images/free7 (2).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dominique Ouattara</h5>
+          <h6>Spécialité : Cloud & DevOps</h6>
+          <p class="card-text">Gestion d’infrastructures cloud et automatisation des déploiements.</p>
+          <p><img src="images/notefree2.jpg" width="100px"></p>
+          <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex justify-content-center cartefiltre" data-category="marketing">
+      <div class="fondu carte card" style="width: 18rem;">
+        <img src="images/free9.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Penda Kane</h5>
+          <h6>Expert SEO</h6>
+          <p class="card-text">Optimisation de sites pour améliorer leur positionnement sur Google.</p>
+          <p><img src="images/notefree2.jpg" width="100px"></p>
+          <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
-
-
-<!-- deuxieme freelances -->
-    <div class="container text-center">
-    <div class="row">
-        <div class="col">
-            <div class=" fondu carte card mb-4" style="width: 18rem;">
-                <img src="images/free8.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Mamadou Ba</h5>
-                <h6>Marketing Digital</h6>
-                <p class="card-text">Expert en stratégie digitale et gestion des réseaux sociaux pour booster la visibilité.</p>
-                <p><img src="images/notefree1.jpg " width="100px"></p>
-                <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col">
-            <div class=" fondu carte card" style="width: 18rem;">
-                <img src="images/free3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Aminata Ndiaye</h5>
-                <h6>Développeuse Frontend</h6>
-                <p class="card-text">Spécialiste React, elle crée des interfaces dynamiques et performantes.</p>
-                <p><img src="images/notefree1.jpg" width="100px"></p>
-                <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col">
-      <div class=" fondu carte card mb-4" style="width: 18rem;">
-                <img src="images/free6.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Ibrahima Mbaye</h5>
-                <h6>Designer Graphique</h6>
-                <p class="card-text">Création de logos, identités visuelles et supports de communication modernes.</p>
-                <p><img src="images/notefree1.jpg" width="100px"></p>
-                <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- 3eme freelances -->
- <div class="container text-center">
-    <div class="row">
-        <div class="col">
-            <div class=" fondu carte card mb-4" style="width: 18rem;">
-                <img src="images/free4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Aissatou Cissé</h5>
-                <h6>Data & IA</h6>
-                <p class="card-text">Analyse de données et création de modèles intelligents pour entreprises.</p>
-                <p><img src="images/notefree2.jpg" width="100px"></p>
-                <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col">
-            <div class=" fondu carte card" style="width: 18rem;">
-                <img src="images/free7 (2).jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Cheikh Touré</h5>
-                <h6>Spécialité :</h6>
-                <p class="card-text">Gestion d’infrastructures cloud et automatisation des déploiements.</p>
-                <p><img src="images/notefree2.jpg" width="100px"></p>
-                <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col">
-      <div class=" fondu carte card" style="width: 18rem;">
-                <img src="images/free9.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Penda Kane</h5>
-                <h6>Expert SEO</h6>
-                <p class="card-text">Optimisation de sites pour améliorer leur positionnement sur Google.</p>
-                <p><img src="images/notefree2.jpg" width="100px"></p>
-                <p><a href="#" class="btn btn-primary">Voir Profil</a></p>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-
 
 <footer >
   <div class="container text-center ">
@@ -225,6 +220,7 @@ rel="stylesheet">
     </div>
   </div>
 </div>
+<p class="text-center">&copy; <span id="annee"></span> Afritalent. Tous droits réservés.</p>
 </footer>
 <button type="button" id="retour" class=" retour btn btn-secondary"><i class="fa-solid fa-arrow-up"></i>
     </button>

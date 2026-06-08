@@ -227,3 +227,144 @@ let  fond = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('.fondu').forEach(section => {
   fond.observe(section);
 });
+
+
+// 1. Sélection des éléments
+let filtreboutons = document.querySelectorAll('.filtre');
+let  cartef = document.querySelectorAll('.cartefiltre');
+
+// 2. Écoute du clic sur chaque bouton
+filtreboutons.forEach(button => {
+  button.addEventListener('click', () => {
+    
+    // A. Gérer le style actif sur les boutons
+    filtreboutons.forEach(btn => {
+      btn.classList.remove('btn-primary', 'active');
+      btn.classList.add('btn-outline-primary');
+    });
+    button.classList.remove('btn-outline-primary');
+    button.classList.add('btn-primary', 'active');
+
+    // B. Logique de filtrage des cartes
+    let selecFiltre = button.getAttribute('data-filter');
+
+    cartef.forEach(card => {
+      let categorie = card.getAttribute('data-category');
+
+      // Si le filtre est "all" ou si la catégorie correspond, on affiche, sinon on cache
+      if (selecFiltre === 'all' || selecFiltre === categorie) {
+        card.classList.remove('is-hidden'); // Rend la carte visible
+      } else {
+        card.classList.add('is-hidden');    // Masque la carte
+      }
+    });
+  });
+});
+
+
+
+// On stocke le formulaire dans une variable
+let formulaireContact = document.getElementById('contactForm');
+
+// Vérification s'il existe sur la page actuelle avant de lui ajouter l'écouteur
+if (formulaireContact) {
+  formulaireContact.addEventListener('submit', function (e) {
+    // 1. Bloquer le rechargement de la page
+    e.preventDefault();
+    
+    // 2. Sélection de tes éléments
+    let prenom = document.getElementById('prenom');
+    let nom = document.getElementById('nom');
+    let email = document.getElementById('exampleFormControlInput1');
+    let sujet = document.getElementById('sujet');
+    let message = document.getElementById('exampleFormControlTextarea1');
+    let success = document.getElementById('succes');
+
+    let valideform = true;
+
+    // --- VALIDATION PRÉNOM ---
+    if (prenom.value.trim() === "") {
+      prenom.classList.add('is-invalid');
+      valideform = false;
+    } else {
+      prenom.classList.remove('is-invalid');
+      prenom.classList.add('is-valid');
+    }
+
+    // --- VALIDATION NOM ---
+    if (nom.value.trim() === "") {
+      nom.classList.add('is-invalid');
+      valideform = false;
+    } else {
+      nom.classList.remove('is-invalid');
+      nom.classList.add('is-valid');
+    }
+
+    // --- VALIDATION EMAIL (REGEX) ---
+    let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    let erreur = document.getElementById('emailerreur');
+
+    if (email.value.trim() === "") {
+      erreur.innerText = "L'adresse email est requise.";
+      email.classList.add('is-invalid');
+      valideform = false;
+    } else if (!emailRegex.test(email.value.trim())) {
+      erreur.innerText = "Le format de l'email n'est pas valide (ex: nom@exemple.com).";
+      email.classList.add('is-invalid');
+      valideform = false;
+    } else {
+      email.classList.remove('is-invalid');
+      email.classList.add('is-valid');
+    }
+
+    // --- VALIDATION SUJET (<select>) ---
+    if (sujet.value === "") {
+      sujet.classList.add('is-invalid');
+      valideform = false;
+    } else {
+      sujet.classList.remove('is-invalid');
+      sujet.classList.add('is-valid');
+    }
+
+    // --- VALIDATION MESSAGE (MIN 20 CARACTÈRES) ---
+    let messageTxt = message.value.trim();
+    let messageErreur = document.getElementById('messageErreur');
+
+    if (messageTxt === "") {
+      messageErreur.innerText = "Le message ne peut pas être vide.";
+      message.classList.add('is-invalid');
+      valideform = false;
+    } else if (messageTxt.length < 20) {
+      messageErreur.innerText = `Le message est trop court (${messageTxt.length}/20 caractères minimum).`;
+      message.classList.add('is-invalid');
+      valideform = false;
+    } else {
+      message.classList.remove('is-invalid');
+      message.classList.add('is-valid');
+    }
+
+    // --- TRAITEMENT FINAL ---
+    if (valideform) {
+      // Afficher l'alerte de succès
+      success.classList.remove('d-none');
+      
+      // Réinitialiser tout le formulaire
+      this.reset();
+      
+      // Retirer les contours verts de validation
+      prenom.classList.remove('is-valid');
+      nom.classList.remove('is-valid');
+      email.classList.remove('is-valid');
+      sujet.classList.remove('is-valid');
+      message.classList.remove('is-valid');
+    } else {
+      // Masquer le succès si l'utilisateur re-soumet avec des erreurs
+      success.classList.add('d-none');
+    }
+  });
+}
+// 1. L'année dynamique Toujours présente sur toutes les pages grâce au footer
+let Annee = document.getElementById('annee');
+if (Annee) {
+    Annee.textContent = new Date().getFullYear();
+}
