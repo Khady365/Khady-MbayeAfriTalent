@@ -391,3 +391,28 @@ footer {
 .is-hidden {
   display: none !important;
 }
+
+/* RESPONSIVE DES CARTES */
+/* Cette règle s'applique uniquement aux écrans de 576 px ou moins
+  (smartphones et petits appareils) */
+@media (max-width: 576px) {
+
+  /* Supprime les marges gauche et droite des cartes
+    pour qu'elles occupent mieux l'espace disponible */
+  .card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Réduit légèrement la taille du texte des cartes
+    afin qu'il reste lisible sur un petit écran */
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  /* Rend la hauteur des cartes automatique
+    pour qu'elles s'adaptent à leur contenu */
+  .card {
+    height: auto !important;
+  }
+}
