@@ -1,181 +1,187 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Contact</title> 
-<!-- Bootstrap 5 via CDN : feuille de style --> 
-<link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
-<!-- Votre feuille de style personnelle --> 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <!-- Bootstrap 5 via CDN : feuille de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Votre feuille de style personnelle -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="bg"> 
-<!-- Le contenu de la page sera ajoute ici --> 
-<nav class=" nav navbar fixed-top navbar-expand-lg navbar-light   ">
+
+<body class="bg">
+  <!-- Le contenu de la page sera ajoute ici -->
+  <nav class=" nav navbar fixed-top navbar-expand-lg navbar-light   ">
     <div class="container-fluid">
       <img src="images/logo afritalent (2).png" width="50px" height="50px">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse container" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-          </li><li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="freelance.html">Freelances</a>
-         </li><li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="tarif.html">Tarifs</a>
-          </li><li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="about.html">À propos</a>
-          </li><li class="nav-item">
+          </li>
+          <li class="nav-item">
             <!-- <a class="nav-link active" aria-current="page" href="index.html">Blog</a> -->
-         </li><li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
           </li>
         </ul>
-        <form class="d-flex">     
-          <button class=" ins btn  btn-primary" type="submit" >Rejoindre AfriTalent </button>
+        <form class="d-flex">
+          <button class=" ins btn  btn-primary" type="submit">Rejoindre AfriTalent </button>
         </form>
       </div>
     </div>
     <button type="button" id="sombre" class=" bt1 btn btn-secondary"><i class="fa-solid fa-sun"></i>
     </button>
   </nav>
-    <div class="row mb-5 mt-5">
-  <div class="contact col-sm-6 mb-4 mb-sm-0">
-    <div class="fondu carte card h-100">
-      <div class="card-body">
-        
-        <h2 class="text-center mb-4">Formulaire</h2>
-        
-        <div id="succes" class="alert alert-success d-none mb-4" role="alert">
-          Votre message a été envoyé avec succès !
-        </div>
-        
-        <form id="contactForm" novalidate>
-          
-          <div class="row mb-5">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Prénom" aria-label="First name" id="prenom">
-              <div class="invalid-feedback">Le prénom est requis.</div>
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Nom" aria-label="Last name" id="nom">
-              <div class="invalid-feedback">Le nom est requis.</div>
-            </div>
-          </div>
-          
-          <div class="mb-5">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            <div class="invalid-feedback" id="emailerreur">L'adresse email est requise.</div>
-          </div>
-          
-          <div class="mb-5">
-            <select class="form-select" aria-label="Default select example" id="sujet">
-              <option value="" selected disabled>Choisir un sujet...</option>
-              <option value="1">Support</option>
-              <option value="2">Partenariat</option>
-              <option value="3">Recrutement</option>
-            </select>
-            <div class="invalid-feedback">Veuillez sélectionner un sujet.</div>
-          </div>
-          
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <div class="invalid-feedback" id="messageErreur">Le message est requis.</div>
-          </div>
-          
-          <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="ins btn btn-primary" type="submit">Soumettre</button>
-          </div>
-          
-        </form>
+  <div class="row mb-5 mt-5">
+    <div class="contact col-sm-6 mb-4 mb-sm-0">
+      <div class="fondu carte card h-100">
+        <div class="card-body">
 
+          <h2 class="text-center mb-4">Formulaire</h2>
+
+          <div id="succes" class="alert alert-success d-none mb-4" role="alert">
+            Votre message a été envoyé avec succès !
+          </div>
+
+          <form id="contactForm" novalidate>
+
+            <div class="row mb-5">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Prénom" aria-label="First name" id="prenom">
+                <div class="invalid-feedback">Le prénom est requis.</div>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Nom" aria-label="Last name" id="nom">
+                <div class="invalid-feedback">Le nom est requis.</div>
+              </div>
+            </div>
+
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <div class="invalid-feedback" id="emailerreur">L'adresse email est requise.</div>
+            </div>
+
+            <div class="mb-5">
+              <select class="form-select" aria-label="Default select example" id="sujet">
+                <option value="" selected disabled>Choisir un sujet...</option>
+                <option value="1">Support</option>
+                <option value="2">Partenariat</option>
+                <option value="3">Recrutement</option>
+              </select>
+              <div class="invalid-feedback">Veuillez sélectionner un sujet.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <div class="invalid-feedback" id="messageErreur">Le message est requis.</div>
+            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="ins btn btn-primary" type="submit">Soumettre</button>
+            </div>
+
+          </form>
+
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="contact col-sm-6 mb-4 mb-sm-0">
-    <div class="fondu carte card h-100">
-      <div class="card-body">
-        
-        <h2 class="text-center mb-4">Informations</h2>
-        
-        <div class="mb-4">
-          <p><i class="fa-solid fa-envelope me-2 text-primary"></i> contact@afritalent.com</p>
-          <p><i class="fa-solid fa-phone-flip me-2 text-primary"></i> +221 33 897 56 00</p>
-          <p><i class="fa-solid fa-location-dot me-2 text-primary"></i> Dakar, Sénégal</p>
-        </div>
-        
-        <div>
-          <iframe src="https://maps.google.com/maps?q=dakar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" width="100%" height="250" style="border:0;">
-          </iframe>
-        </div>
 
+    <div class="contact col-sm-6 mb-4 mb-sm-0">
+      <div class="fondu carte card h-100">
+        <div class="card-body">
+
+          <h2 class="text-center mb-4">Informations</h2>
+
+          <div class="mb-4">
+            <p><i class="fa-solid fa-envelope me-2 text-primary"></i> contact@afritalent.com</p>
+            <p><i class="fa-solid fa-phone-flip me-2 text-primary"></i> +221 33 897 56 00</p>
+            <p><i class="fa-solid fa-location-dot me-2 text-primary"></i> Dakar, Sénégal</p>
+          </div>
+
+          <div>
+            <iframe src="https://maps.google.com/maps?q=dakar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+              width="100%" height="250" style="border:0;">
+            </iframe>
+          </div>
+
+        </div>
       </div>
     </div>
+
   </div>
 
-</div>
 
 
-
-<footer >
-  <div class="container text-center ">
-  <div class="row align-items-start">
-    <div class="col">
-      <img src="images/logofooter.png" width="90px">
-      <p>
-          Plateforme dédiée à la mise en relation entre freelances africains 
-          et entreprises du monde entier.
-        </p>
+  <footer>
+    <div class="container text-center ">
+      <div class="row align-items-start">
+        <div class="col">
+          <img src="images/logofooter.png" width="90px">
+          <p>
+            Plateforme dédiée à la mise en relation entre freelances africains
+            et entreprises du monde entier.
+          </p>
+        </div>
+        <div class="col">
+          <h5>Liens utiles</h5>
+          <ul type="none">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Freelances</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Contact</h5>
+          <p>Email : contact@afritalent.com</p>
+          <p>Tél : +221 77 000 00 00</p>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="col">
+          <h5>Ressources</h5>
+          <ul type="none">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guide freelance</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="col">
-      <h5>Liens utiles</h5>
-      <ul type="none">
-        <li><a href="#">Accueil</a></li>
-          <li><a href="#">Freelances</a></li>
-          <li><a href="#">Tarifs</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="col">
-      <h5>Contact</h5>
-      <p>Email : contact@afritalent.com</p>
-        <p>Tél : +221 77 000 00 00</p>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-    </div>
-    <div class="col">
-      <h5>Ressources</h5>
-      <ul type="none">
-        <li><a href="#">Blog</a></li>
-          <li><a href="#">Guide freelance</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Support</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<p class="text-center">&copy; <span id="annee"></span> Afritalent. Tous droits réservés.</p>
-</footer>
+    <p class="text-center">&copy; <span id="annee"></span> Afritalent. Tous droits réservés.</p>
+  </footer>
 
-<button type="button" id="retour" class=" retour btn btn-secondary"><i class="fa-solid fa-arrow-up"></i>
-    </button>
+  <button type="button" id="retour" class=" retour btn btn-secondary"><i class="fa-solid fa-arrow-up"></i>
+  </button>
 
 
-<!-- Bootstrap 5 via CDN : script JavaScript --> 
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-<!-- Votre script JavaScript --> 
-<script src="js/main.js"></script>
+  <!-- Bootstrap 5 via CDN : script JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Votre script JavaScript -->
+  <script src="js/main.js"></script>
 </body>
+
 </html>

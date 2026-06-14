@@ -1,288 +1,332 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>AfriTalent — Accueil</title> 
-<!-- Bootstrap 5 via CDN : feuille de style --> 
-<link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
-<!-- Votre feuille de style personnelle --> 
-<link rel="stylesheet" href="css/style.css"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriTalent — Accueil</title>
+  <!-- Bootstrap 5 via CDN : feuille de style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Votre feuille de style personnelle -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="bg"> 
-<!-- Le contenu de la page sera ajoute ici --> 
- <header >
-  <nav class=" nav navbar fixed-top navbar-expand-lg navbar-light  ">
-    <div class="container-fluid">
-      <img src="images/logo afritalent (2).png" width="50px" height="50px">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+
+<body class="bg">
+  <!-- Le contenu de la page sera ajoute ici -->
+   <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class=" nav navbar fixed-top navbar-expand-lg navbar-light  ">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <img src="images/logo afritalent (2).png" width="50px" height="50px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="freelance.html">Freelances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="tarif.html">Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">À propos</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link active" aria-current="page" href="">Blog</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!-- Bouton d'inscription -->
+          <form class="d-flex">
+            <button class=" ins btn  btn-primary" type="submit">Rejoindre AfriTalent </button>
+          </form>
+        </div>
+      </div>
+      <!-- Bouton mode sombre -->
+      <button type="button" id="sombre" class=" bt1 btn btn-secondary"><i class="fa-solid fa-sun"></i>
       </button>
-      <div class="collapse navbar-collapse container" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-          </li><li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="freelance.html">Freelances</a>
-         </li><li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="tarif.html">Tarifs</a>
-          </li><li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="about.html">À propos</a>
-          </li><li class="nav-item">
-            <!-- <a class="nav-link active" aria-current="page" href="">Blog</a> -->
-         </li><li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-          </li>
-        </ul>
-        <form class="d-flex">     
-          <button class=" ins btn  btn-primary" type="submit" >Rejoindre AfriTalent </button>
-        </form>
-      </div>
+    </nav>
+
+
+  </header>
+
+  <section class=" fondu hero pt-5 ">
+    <div class=" into mb-2">
+      Plateforme de mise en relation
     </div>
-    <button type="button" id="sombre" class=" bt1 btn btn-secondary"><i class="fa-solid fa-sun"></i>
-    </button>
-  </nav>
-  
-
-</header>
-
-<section class=" fondu hero pt-5 ">
-  <div class=" into mb-2">
-    Plateforme de mise en relation
-  </div>
-  <div>
+    <div>
       <h1 class="text-center">Connecter les talents africains au monde.</h1>
-      <h2 class="text-center mb-3">Trouvez ou proposez des missions freelances facilement avec <span class="afri">AfriTalent</span> .</h2>
-     <p class="mb-5">Des opportunités sur mesure pour entreprises & freelances. <br>
-            Trouvez les meilleurs talents ou décrochez des missions, où que vous soyez et à votre rythme.</p>
-  </div>
-  
-    <div class="row container text-center g-5 mb-4 mx-5">
-  <div class="col-md-4">
-    <div class="  carte0 card" style="width: 10rem; height: 5rem;">
-      <strong>+<span class="cpt" data-target="200">0</span></strong> freelances
+      <h2 class="text-center mb-3">Trouvez ou proposez des missions freelances facilement avec <span
+          class="afri">AfriTalent</span> .</h2>
+      <p class="mb-5">Des opportunités sur mesure pour entreprises & freelances. <br>
+        Trouvez les meilleurs talents ou décrochez des missions, où que vous soyez et à votre rythme.</p>
     </div>
-  </div>
+    <div class="row container text-center g-5 mb-4 mx-auto">
+      <div class="col-md-4">
+        <div class="carte0 card mx-auto" style="width: 10rem; height: 5rem;">
+          <div><strong>+<span class="cpt" data-target="200">0</span></strong></div>
+          <div>freelances</div>
+        </div>
+      </div>
 
-  <div class="col-md-4">
-    <div class="  carte0 card" style="width: 10rem; height: 5rem;">
-      <strong>+<span class="cpt" data-target="400">0</span></strong> entreprises
+      <div class="col-md-4">
+        <div class="carte0 card mx-auto" style="width: 10rem; height: 5rem;">
+          <div><strong>+<span class="cpt" data-target="400">0</span></strong></div>
+          <div>entreprises</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="carte0 card mx-auto" style="width: 10rem; height: 5rem;">
+          <div><strong>+<span class="cpt" data-target="500">0</span></strong></div>
+          <div>missions</div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="  carte0 card" style="width: 10rem; height: 5rem;">
-      <strong>+<span class="cpt" data-target="500">0</span></strong> missions
+    <div class="mb-5 mx-3 mt-5  container text-center">
+      <a href="contact.html" class="bts btn btn-primary active me-4" role="button" data-bs-toggle="button"
+        aria-pressed="true">Je suis Freelance </a>
+      <a href="contact.html" class="bts btn  active" role="button" data-bs-toggle="button" aria-pressed="true">Je
+        cherche un Freelance</a>
     </div>
-  </div>
-</div>
-        <div class="mb-5 mx-3 mt-5  container text-center" >
-          <a href="contact.html"  class="bts btn btn-primary active me-4" role="button" data-bs-toggle="button" aria-pressed="true">Je suis Freelance </a>
-          <a href="contact.html" class="bts btn  active" role="button" data-bs-toggle="button" aria-pressed="true" >Je cherche un Freelance</a>
-         </div>
-</section>
-<section class="fondu" id="COMMENT ÇA MARCHE ">
-<h1 class=" h1 text-center mb-5 mt-5">COMMENT ÇA MARCHE</h1>
-  <div class=" row container text-center g-5 mb-4 ps-5 ">
-    <div class=" fondu carte card me-5 mx-4" style="width: 40rem; height: 12rem;  ">
-      <div class=" card-body  come" >
-        <img src="images/loupe.jpg" width="30px">
-        <h5 class="  card-title"> 1 — Comprendre</h5>
-      <p class="  card-text">On analyse le besoin en détail pour bien cerner les objectifs du projet.<br>
-       Cette phase permet d’identifier le public cible, <br>les contraintes techniques et les attentes principales afin de partir sur des bases solides.
-      </p>
+  </section>
+
+
+  <section class="fondu" id="COMMENT ÇA MARCHE">
+    <h1 class="text-center h1 mb-5 mt-5">COMMENT ÇA MARCHE</h1>
+    <div class="row container text-center g-5 mb-4 ps-5 mx-auto">
+      <div class="col-md-8">
+        <div class="fondu carte card me-5 mx-4" style="height: 12rem;">
+          <div class="card-body come">
+            <img src="images/loupe.jpg" width="30" alt="Loupe">
+            <h5 class="card-title">1 — Comprendre</h5>
+            <p class="card-text">On analyse le besoin en détail pour bien cerner les objectifs du projet.<br>
+              Cette phase permet d’identifier le public cible, <br>les contraintes techniques et les attentes
+              principales afin de partir sur des bases solides.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="fondu carte card mx-4" style="height: 17rem;">
+          <div class="card-body">
+            <img src="images/pinceau.jpg" width="30" alt="Pinceau">
+            <h5 class="card-title">2 — Imaginer</h5>
+            <p class="card-text">On conçoit la structure et l’apparence du projet à travers des maquettes et des idées
+              visuelles. L’objectif est de créer une expérience claire, moderne et agréable.</p>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
 
+    <div class="row container text-center g-5 mb-4 ps-5 mx-auto">
+      <div class="col-md-6">
+        <div class="fondu carte card me-5 mx-5">
+          <div class="card-body">
+            <img src="images/construire.jpg" width="30" alt="Marteau">
+            <h5 class="card-title">3 — Construire</h5>
+            <p class="card-text">On passe à la réalisation concrète en développement les fonctionnalités et en intégrant
+              le design. Chaque élément est mis en place progressivement pour obtenir un résultat fonctionnel et
+              cohérent.</p>
+          </div>
+        </div>
+      </div>
 
-<div class=" fondu carte card mx-4" style="width: 18rem; height: 17rem;" col-md-4>
-  <div class="  card-body  ">
-    <img src="images/pinceau.jpg"  width="30px">
-    <h5 class="card-title">2 — Imaginer</h5>
-    <p class="  card-text">On conçoit la structure et l’apparence du projet à travers des maquettes et des idées visuelles. L’objectif est de créer une expérience claire, moderne et agréable.</p>
-  </div>
-</div>
-  </div>
+      <div class="col-md-6">
+        <div class="fondu carte card mx-5">
+          <div class="card-body">
+            <img src="images/fusee.jpg" width="30" alt="Fusée">
+            <h5 class="card-title">4 — Lancer</h5>
+            <p class="card-text">On teste le projet pour corriger les erreurs et améliorer les performances. Une fois
+              tout validé, il est mis en ligne pour être accessible aux utilisateurs dans les meilleures conditions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="fondu CATÉGORIES" id="CATÉGORIES DE SERVICES">
+    <h1 class="text-center h1 mb-5 mt-5">NOS SERVICES</h1>
+    <div class="row container text-center g-5 mb-5 mx-auto">
+      <div class="service col-md-4">
+        <div class="fondu carte1 card mx-auto py-3" style="width: 18rem;">
+          <div class="card-body">
+            <img src="images/icon ordinateur.jpg" width="30px">
+            <span class="card-title h5 d-block">Développement Web</span>
+            <span class="card-text d-block">+120 freelances disponibles</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="service col-md-4">
+        <div class="fondu carte2 card mx-auto " style="width: 18rem;">
+          <div class="card-body">
+            <img src="images/icon ui ux.jpg" width="30px">
+            <span class="card-title h5 d-block">Design UI/UX</span>
+            <span class="card-text d-block">+85 freelances disponibles</span>
+          </div>
+        </div>
+      </div>
 
-<div class="row container text-center g-5 mb-4 ps-5" >
-  <div class=" fondu carte card me-5 mx-5 " style="width: 25rem;">
-  <div class="card-body">
-    <img src="images/construire.jpg" width="30px">
-    <h5 class="card-title">3 — Construire</h5>
-    <p class="  card-text">On passe à la réalisation concrète en développant les fonctionnalités et en intégrant le design. Chaque élément est mis en place progressivement pour obtenir un résultat fonctionnel et cohérent.</p>
-  </div>
-</div>
-<div class="  fondu carte card mx-5" style="width: 25rem;">
-  <div class="  card-body " >
-    <img src="images/fusee.jpg" width="30px">
-    <h5 class="card-title">4 — Lancer</h5>
-    <p class="  card-text">On teste le projet pour corriger les erreurs et améliorer les performances. Une fois tout validé, il est mis en ligne pour être accessible aux utilisateurs dans les meilleures conditions.</p>
-  </div>
-</div>
-</section>
-<section class=" fondu CATÉGORIES " id="CATÉGORIES DE SERVICES ">
-<h1 class="h1 text-center mb-5 mt-5">NOS SERVICES</h1>
-<div class="  row container text-center g-5 mb-5" >
-  <div class=" service col-md-4  ">
-    <div class=" fondu carte1 card " style="width: 18rem;">
-  <div class="card-body">
-    <img src="images/icon ordinateur.jpg" width="30px">
-    <h5 class="card-title"><h3>Développement Web</h3></h5>
-    <p class="card-text"> <p>+120 freelances disponibles</p>
-  </div>
-</div>
-  </div>
-  <div class=" service col-md-4">
-    <div class=" fondu carte2 card" style="width: 18rem;">
-  <div class="card-body">
-    <img src="images/icon ui ux.jpg" width="30px">
-    <h5 class="card-title"><h3>Design UI/UX</h3></h5>
-    <p class="card-text"> <p>+85 freelances disponibles</p>
-  </div>
-</div>
-  </div>
-  <div class=" service col-md-4">
-    <div class=" fondu carte3  card" style="width: 18rem;">
-  <div class="card-body">
-    <img src="images/micro.jpg" width="30px">
-    <h5 class="card-title"><h3>Marketing Digital</h3></h5>
-    <p class="card-text"> <p>+95 freelances disponibles</p>
-  </div>
-</div>
-</div>
-  </div>
+      <div class="service col-md-4">
+        <div class="fondu carte3 card mx-auto" style="width: 18rem;">
+          <div class="card-body">
+            <img src="images/micro.jpg" width="30px">
+            <span class="card-title h5 d-block">Marketing Digital</span>
+            <span class="card-text d-block">+95 freelances disponibles</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="row container text-center g-5 mb-5 mx-auto">
+      <div class="service col-md-4">
+        <div class="fondu carte4 card mx-auto py-3" style="width: 18rem;">
+          <div class="card-body">
+            <img src="images/icon ia.jpg" width="30px">
+            <span class="card-title h5 d-block">Data & IA</span>
+            <span class="card-text d-block">+70 freelances disponibles</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="service col-md-4">
+        <div class="fondu carte5 card mx-auto" style="width: 18rem;">
+          <div class="card-body">
+            <img src="images/icone redaction tech.jpg" width="30px">
+            <span class="card-title h5 d-block">Rédaction Tech</span>
+            <span class="card-text d-block">+60 freelances disponibles</span>
+          </div>
+        </div>
+      </div>
 
-
-<div class="row container text-center g-5 mb-5" >
-  <div class=" service col-md-4">
-<div class=" fondu carte4 card" style="width: 18rem;">
-  <div class="card-body">
-    <img src="images/icon ia.jpg" width="30px">
-    <h5 class="card-title"><h3>Data & IA</h3></h5>
-    <p class="card-text"> <p>+70 freelances disponibles</p>
-  </div>
-</div>
-  </div>
-  <div class=" service col-md-4">
-    <div class=" fondu carte5 card" style="width: 18rem;">
-  <div class="card-body">
-    <img src="images/icone redaction tech.jpg" width="30px">
-    <h5 class="card-title"><h3>Rédaction Tech</h3></h5>
-    <p class="card-text"> <p>+60freelances disponibles</p>
-  </div>
-</div>
-  </div>
-  <div class=" service col-md-4">
-    <div class=" fondu carte6 card" style="width: 18rem;">
-  <div class="card-body">
-    <img src="images/icon devops et cloud.jpg" width="30px">
-    <h5 class="card-title"><h3>DevOps & Cloud</h3></h5>
-    <p class="card-text"> <p>+50 freelances disponibles</p>
-  </div>
-</div>
-</div>
-  </div>
-</section>
-<section class=" fondu py-5" id="TÉMOIGNAGES">
-<h1 class=" h1 text-center mb-5">NOS TEMOIGNAGES</h1>
-<div id="carouselExampleFade" class=" carousel slide carousel-fade container text-center g-5 ">
-  <div class="carousel-inner">
-    <div class=" carou carousel-item active ">
-      <img src="images/freelances3.jpg" class="d-block w-90" height="500px">
-      <div>
+      <div class="service col-md-4">
+        <div class="fondu carte6 card mx-auto" style="width: 18rem;">
+          <div class="card-body">
+            <img src="images/icon devops et cloud.jpg" width="30px">
+            <span class="card-title h5 d-block">DevOps & Cloud</span>
+            <span class="card-text d-block">+50 freelances disponibles</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="fondu py-5" id="TÉMOIGNAGES">
+    <h1 class="text-center h1 mb-5">NOS TEMOIGNAGES</h1>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade container text-center g-5">
+      <div class="carousel-inner">
+        <div class="carou carousel-item active">
+          <img src="images/freelances3.jpg" class="d-block mx-auto" height="250" alt="Fatou Ndiaye">
+          <div>
             <h5>Fatou Ndiaye</h5>
-      <h6>Freelance (Développeuse web)</h6>
-      <p>Grâce à cette plateforme, j’ai pu décrocher plusieurs missions en très peu de temps.</p>
-      <img src="images/notefree1.jpg" width="100px">
-      </div>
-      
-    </div>
-    <div class=" carou carousel-item">
-      <img src="images/freelances7.jpg" class="d-block w-90" height="500px">
-      <div>
+            <h6>Freelance (Développeuse web)</h6>
+            <p>Grâce à cette plateforme, j’ai pu décrocher plusieurs missions en très peu de temps.</p>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+
+        <div class="carou carousel-item">
+          <img src="images/freelances7.jpg" class="d-block mx-auto" height="250" alt="Mamadou Diallo">
+          <div>
             <h5>Mamadou Diallo</h5>
-          <h6>Entreprise (Startup tech)</h6>
-          <p>Nous avions besoin d’un développeur en urgence, et en moins de 48 heures, nous avons trouvé un profil parfaitement adapté.</p>
-          <img src="images/notefree1.jpg" width="100px">
+            <h6>Entreprise (Startup tech)</h6>
+            <p>Nous avions besoin d’un développeur en urgence, et en moins de 48 heures, nous avons trouvé un profil
+              parfaitement adapté.</p>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
+
+        <div class="carou carousel-item mt-5">
+          <img src="images/freelances8.jpg" class="d-block mx-auto" height="250" alt="Zola Dlamini">
+          <div>
+            <h5>Zola Dlamini</h5>
+            <h6>Entreprise (Agence digitale)</h6>
+            <p>La plateforme nous fait gagner un temps précieux. Les freelances sont qualifiés et disponibles
+              rapidement.</p>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+        </div>
       </div>
-      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class=" carou carousel-item mt-5">
-      <img src="images/freelances8.jpg" class="d-block w-90" height="500px">
-      <div>
-                <h5>Zola Dlamini</h5>
-      <h6>Entreprise (Agence digitale)</h6>
-      <p>La plateforme nous fait gagner un temps précieux. Les freelances sont qualifiés et disponibles rapidement.</p>
-      <img src="images/notefree1.jpg" width="100px">
+  </section>
+  <section id="APPEL À L'ACTION " class=" fondu action text-center  mt-5">
+    <h1 class=" h1 mt-5 ">Prêt à lancer votre prochain projet ?</h1>
+    <p>Trouvez les meilleurs freelances dès aujourd’hui.</p>
+    <a href="contact.html" class=" ins btn btn-light active mb-5" role="button" data-bs-toggle="button"
+      aria-pressed="true">S’inscrire maintenant</a>
+  </section>
+  <footer>
+    <div class="container text-center ">
+      <div class="row align-items-start">
+        <div class="col">
+          <img src="images/logofooter.png" width="90px">
+          <p>
+            Plateforme dédiée à la mise en relation entre freelances africains
+            et entreprises du monde entier.
+          </p>
+        </div>
+        <div class="col">
+          <h5>Liens utiles</h5>
+          <ul type="none">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Freelances</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Contact</h5>
+          <p>Email : contact@afritalent.com</p>
+          <p>Tél : +221 77 000 00 00</p>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="col">
+          <h5>Ressources</h5>
+          <ul type="none">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guide freelance</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
       </div>
-      
     </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
+    <p class="text-center">&copy; <span id="annee"></span> Afritalent. Tous droits réservés.</p>
+
+  </footer>
+
+  <button type="button" id="retour" class=" retour btn btn-secondary"><i class="fa-solid fa-arrow-up"></i>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-  </div>
-</section>
-<section id="APPEL À L'ACTION " class=" fondu action text-center  mt-5">
-<h1 class=" h1 mt-5 ">Prêt à lancer votre prochain projet ?</h1>
-<p>Trouvez les meilleurs freelances dès aujourd’hui.</p>
-<a href="contact.html" class=" ins btn btn-light active mb-5" role="button" data-bs-toggle="button" aria-pressed="true">S’inscrire maintenant</a>
-</section>
-<footer >
-  <div class="container text-center ">
-  <div class="row align-items-start">
-    <div class="col">
-      <img src="images/logofooter.png" width="90px">
-      <p>
-          Plateforme dédiée à la mise en relation entre freelances africains 
-          et entreprises du monde entier.
-        </p>
-    </div>
-    <div class="col">
-      <h5>Liens utiles</h5>
-      <ul type="none">
-        <li><a href="#">Accueil</a></li>
-          <li><a href="#">Freelances</a></li>
-          <li><a href="#">Tarifs</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="col">
-      <h5>Contact</h5>
-      <p>Email : contact@afritalent.com</p>
-        <p>Tél : +221 77 000 00 00</p>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-    </div>
-    <div class="col">
-      <h5>Ressources</h5>
-      <ul type="none">
-        <li><a href="#">Blog</a></li>
-          <li><a href="#">Guide freelance</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Support</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-  <p class="text-center">&copy; <span id="annee"></span> Afritalent. Tous droits réservés.</p>
-</footer>
-
-<button type="button" id="retour" class=" retour btn btn-secondary"><i class="fa-solid fa-arrow-up"></i>
-    </button>
 
 
 
@@ -293,12 +337,11 @@ rel="stylesheet">
 
 
 
-<!-- Bootstrap 5 via CDN : script JavaScript --> 
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-<!-- Votre script JavaScript --> 
-<script src="js/main.js"></script>
+  <!-- Bootstrap 5 via CDN : script JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Votre script JavaScript -->
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>

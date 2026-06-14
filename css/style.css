@@ -1,297 +1,382 @@
-
+/* Supprime les marges et espacements par défaut de tous les éléments */
 * {
-    margin: 0;
-    padding: 0;}
-.nav{
-   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: white;
-    transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 0;
+  padding: 0;
 }
+
+/*  Barre de navigation */
+.nav {
+  /* Ajoute une bordure en bas de la navbar */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  /* Définit un fond blanc */
+  background-color: white;
+  /* Ajoute une transition fluide lors des changements */
+  transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style de la navbar lorsque la page défile */
 .nav.scrolled {
-  padding: 15px 50px; /* Réduis ces valeurs selon tes goûts pour l'effet "shrink" */
-  background-color: #1E293B !important; /* Force le nouveau fond opaque (Bleu Confiance) */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* L'ombre portée */
+  padding: 15px 50px;
+  /* Réduis la taille pour l'effet shrink */
+  background-color: #1E293B !important;
+  /* Force le nouveau fond opaque  */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  /* Ajoute une ombre sous la navbar */
 }
+
+/* Change la couleur des liens lorsque la navbar défile */
 .nav.scrolled a {
-  color: #FFFFFF !important; /* Force les liens en blanc si ton fond devient sombre */
+  color: #FFFFFF !important;
+  /* Force les liens en blanc si ton fond devient sombre */
 }
 
+/* STYLE GÉNÉRAL DE LA PAGE */
 body {
-  /* background-color: rgb(238, 238, 238); */
+  /* Décale le contenu pour laisser la place à la navbar */
   padding-top: 70px;
-  /* font-family: var(--font-inter); */
- font-family: 'Times New Roman', Times, serif;
- font-size: large;
- /* background: #EEEDFF; */
- 
-}
-.ins{
-  padding: 10px 40px;
-   border-radius: 20px;
+  /* Police utilisée sur le site */
+  font-family: 'Times New Roman', Times, serif;
+  /* Taille du texte */
+  font-size: large;
+
+
 }
 
-.into{
-  color: #4f8ef7;
-    border: 1px solid #3a7cec;
-    background-color: #b2cbef;
-    padding: 5px 10px;
-    display: inline-block;
-    border-radius: 20px;
+/* BOUTONS */
+.ins {
+  padding: 10px 40px;
+  border-radius: 20px;
 }
-.afri{
+
+/* BADGE D'INTRODUCTION */
+.into {
+  color: #4f8ef7;
+  border: 1px solid #3a7cec;
+  background-color: #b2cbef;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+/* Couleur spéciale utilisée pour certains textes */
+.afri {
   color: #7db4ff;
 }
 
-.carte{
+/* LES CARTES */
+.carte {
   border-radius: 20px;
+  /* Animation fluide */
   transition: 0.3s;
-   background: #4572cd19;
+  /* Couleur de fond */
+  background: #4572cd19;
   color: #64748b;
- border: 1px solid #e5e7eb;
+  border: 1px solid #e5e7eb;
 }
-.carte:hover{
+
+/* Effet au survol de la souris */
+.carte:hover {
+  /* Fait légèrement monter la carte */
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(59,130,246,0.25);
+  /* Ajoute une ombre */
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.25);
 }
-.carte0{
+
+.carte0 {
   border-radius: 20px;
   transition: 0.3s;
   justify-content: center;
-  
+
 }
-.carte0:hover{  
+
+.carte0:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(218, 226, 197, 0.874);
-  
+
 }
-  
-.carte1{
+
+.carte1 {
   border-radius: 20px;
   transition: 0.3s;
   background: #4572cd19;
   color: #64748b;
   border: 1px solid #e5e7eb;
 }
-.carte1:hover{
+
+.carte1:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(187, 18, 217, 0.616);
-  
+
 }
-.carte2{
+
+.carte2 {
   border-radius: 20px;
   transition: 0.3s;
   background: #4572cd19;
   color: #64748b;
   border: 1px solid #e5e7eb;
 }
-.carte2:hover{
+
+.carte2:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(243, 166, 34, 0.742);
 }
-.carte3{
+
+.carte3 {
   border-radius: 20px;
   transition: 0.3s;
   background: #4572cd19;
   color: #64748b;
   border: 1px solid #e5e7eb;
 }
-.carte3:hover{
+
+.carte3:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(20, 209, 99, 0.605);
 }
-.carte4{
+
+.carte4 {
   border-radius: 20px;
   transition: 0.3s;
   background: #4572cd19;
   color: #64748b;
   border: 1px solid #e5e7eb;
 }
-.carte4:hover{
+
+.carte4:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(7, 96, 230, 0.605);
 }
-.carte5{
+
+.carte5 {
   border-radius: 20px;
   transition: 0.3s;
   background: #4572cd19;
   color: #64748b;
   border: 1px solid #e5e7eb;
 }
-.carte5:hover{
+
+.carte5:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-.carte6{
+
+.carte6 {
   border-radius: 20px;
   transition: 0.3s;
   background: #4572cd19;
   color: #64748b;
   border: 1px solid #e5e7eb;
 }
-.carte6:hover{
+
+.carte6:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(220, 11, 60, 0.715);
 }
-.carte7{
+
+/* Les cartes 2, 3, 4, 5 et 6 fonctionnent exactement sur le même principe : elles possèdent le même style mais changent seulement la couleur de leur ombre lorsqu'on passe la souris dessus. */
+
+/* CARTE PRINCIPALE */
+.carte7 {
   border-radius: 20px;
   transition: 0.3s;
+  /* Ombre permanente */
   box-shadow: 0 8px 20px rgba(59, 10, 207, 0.715);
   border: 2px solid #0d6efd;
+  /* Agrandit légèrement la carte */
   transform: scale(1.1);
 }
-.carte7:hover{
-  transform: translateY(-5px);
-  
-}
-.badge{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #0d6efd;
-    color: white;
-    padding: 5px 12px;
-    border-radius: 20px;
 
-    
+.carte7:hover {
+  transform: translateY(-5px);
+
+
 }
-.bt{
-   padding: 20px 40px;
-   border-radius: 20px;
+
+.equipes {
+  border-radius: 10px;
 }
-.bts{
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #0d6efd;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+
+  /* Style du bouton principal */
+}
+
+.bt {
   padding: 20px 40px;
-   border-radius: 20px;
-   
-  
-  
+  /* Espace intérieur */
+  border-radius: 20px;
+  /* Arrondit les coins */
 }
-.bts:hover{
+
+/* Deuxième style de bouton */
+.bts {
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+
+/* Effet lorsque la souris passe sur le bouton */
+.bts:hover {
   transform: translateY(-5px);
+  /* Fait monter légèrement le bouton */
   box-shadow: 0 8px 20px rgba(218, 226, 197, 0.874);
-  transform: translateY(-5px);
+  /* Ajoute une ombre */
 }
 
-.action{
- background-color: #7db4ff;
- padding: 10px 40px;
- color: white;
+/* section  Action*/
+/* Style de la section d'appel à l'action */
+.action {
+  background-color: #7db4ff;
+  padding: 10px 40px;
+  color: white;
 }
-h1{
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- font-weight: 100;
- color: white;
-}
-h2{
+
+/* Style des titres h1 */
+h1 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- font-weight: 100;
+  font-weight: 100;
+  color: white;
 }
-.hero{
-    
-  /* color: white; 
-  text-align: center;
-  padding: 80px 1.5rem 48px;
- background-image: url("../images/imghero.png");
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat; */
- color: white;
-  text-align: center;
-  padding: 80px 1.5rem 48px;
- background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)
-        ),
-        url("../images/imghero.png");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
- 
-  /* background: linear-gradient(to right, #0f172a, #1e293b); couleur que je peux utiliser au mode sombre */
+/* Style des titres h2 */
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
 }
-.hero h1 ,h2  {
+
+.hero {
+  color: white;
+  text-align: center;
+  /* Centre le texte */
+  padding: 80px 1.5rem 48px;
+  /* Espacement intérieur */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/imghero.png");
+  /* Ajoute un dégradé sombre sur l'image */
+  /* Ajuste l'image de fond */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Rend les titres de la section Hero plus épais */
+.hero h1,
+h2 {
   font-weight: 900;
-  
+
 }
- 
-.service{
-  justify-content:center;
+
+/* Organisation des services */
+.service {
+  justify-content: center;
   display: flex;
   gap: 20px;
 }
-.contact{
-  justify-content:center;
+
+/* Organisation de la section contact */
+.contact {
+  justify-content: center;
   display: flex;
   gap: 10px;
 }
-.carou{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #64748b;
 
+/* Organisation du carrousel */
+.carou {
+  color: #64748b;
 }
 
+.d-block {
+  border-radius: 30px;
+}
 
-.come{
+/* Change la couleur des icônes précédent et suivant du carrousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* Inverse les couleurs pour rendre les icônes visibles sur un fond sombre */
+  filter: invert(1);
+}
+
+/* Petit élément décoratif */
+.come {
   height: 10px;
 }
-/* .bt1{
-  background-color: white;
-} */
-/* .CATÉGORIES{
-  background: #E8D5CC;
-} */
 
- footer{
+/* FOOTER */
+/* Style du pied de page */
+footer {
   background: #001C2F;
   color: white;
- }
- .bg{
+}
+
+/* MODE SOMBRE */
+/* Couleur utilisée lorsque le mode sombre est activé */
+.bg {
   background-color: #0d1117;
- }
- .h1{
-  color:black;
- }
- .hist{
-  color:#64748b ;
- }
- .inov{
-  color:#64748b ;
- }
- .retour{
+  /* couleur des texte */
+}
+
+.h1 {
+  color: black;
+}
+
+.hist {
+  color: #64748b;
+}
+
+.inov {
+  color: #64748b;
+}
+
+/* BOUTON RETOUR EN HAUT */
+.retour {
   position: fixed;
-  bottom: 30px; /* Distance par rapport au bas de l'écran */
-  right: 30px;  /* Distance par rapport à la droite */
-  z-index: 99;  /* Pour passer au-dessus du contenu */
-  background:linear-gradient(45deg, rgb(50, 91, 224), rgb(189, 196, 206));
+  /* Position fixe sur l'écran */
+  bottom: 30px;
+  /* Distance par rapport au bas de l'écran */
+  right: 30px;
+  /* Distance par rapport à la droite */
+  z-index: 99;
+  /* Pour passer au-dessus du contenu */
+  background: linear-gradient(45deg, rgb(50, 91, 224), rgb(189, 196, 206));
+  /* Fond en dégradé */
   /* ÉTAT INITIAL,Caché et transparent */
   opacity: 0;
   visibility: hidden;
   /* Transition pour l'effet de fondu et de survol */
   transition: all 0.3s ease;
- }
- .retour:hover {
-  background:linear-gradient(45deg, rgb(50, 91, 224), rgb(189, 196, 206)); 
-  transform: translateY(-5px); /* Légère animation de montée */
 }
-/* L'ÉTAT ACTIVER (géré par le JavaScript au scroll) */
+
+/* Effet au survol */
+.retour:hover {
+  background: linear-gradient(45deg, rgb(50, 91, 224), rgb(189, 196, 206));
+  transform: translateY(-5px);
+  /* Légère animation de montée */
+}
+
+/* L'ÉTAT ACTIVER géré par le JavaScript au scroll */
 .retour.show {
   opacity: 1;
   visibility: visible;
 }
 
+/* ANIMATION D'APPARITION */
 /*  L'état initial : invisible et poussé de 30px vers le bas */
 .fondu {
   opacity: 0;
   transform: translateY(30px);
   visibility: hidden;
-  
+
   /* Une transition fluide de 0.8 seconde */
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  will-change: opacity, transform; /* Optimise les performances graphiques */
+  will-change: opacity, transform;
+  /* Optimise les performances graphiques */
 }
 
 /*  L'état actif : déclenché par le JavaScript */
@@ -300,13 +385,9 @@ h2{
   transform: translateY(0);
   visibility: visible;
 }
-/*  Pour ajouter une transition douce à la disparition/apparition */
 
-/* La classe cachée  */
+/* FILTRAGE DES CARTES */
+/* Classe utilisée pour masquer une carte */
 .is-hidden {
   display: none !important;
 }
-
-
-
-
